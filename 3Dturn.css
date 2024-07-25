@@ -1,0 +1,206 @@
+section {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    perspective: 1300px;
+    overflow: hidden;
+}
+
+main {
+    width: 300px;
+    height: 300px;
+    margin: 250px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    /* 静态观赏 */
+    animation: turn 3s linear infinite;
+    animation-play-state: paused;
+}
+
+div[class] {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+main:hover {
+    animation-play-state: running;
+}
+
+@keyframes turn {
+    0% {
+        transform: rotateX(320deg) rotateY(310deg);
+    }
+
+    25% {
+        transform: rotateX(230deg) rotateY(220deg);
+    }
+
+    50% {
+        transform: rotateX(140deg) rotateY(130deg);
+    }
+
+    75% {
+        transform: rotateX(50deg) rotateY(40deg);
+    }
+
+    100% {
+        transform: rotateX(-40deg) rotateY(-50deg);
+    }
+}
+
+.box1 {
+    transform: translateZ(150px);
+}
+
+.box2 {
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.box3 {
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.box4 {
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.box5 {
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.box6 {
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+#border {
+    width: 700px;
+    height: 700px;
+    position: relative;
+    border-top: 10px solid white;
+    border-bottom: 10px solid #2d2c32;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+    top: -210px;
+    bottom: 0;
+    right: 0;
+    left: -208px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(90deg) rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateX(90deg) rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateX(90deg) rotateZ(180deg);
+    }
+
+    75% {
+        transform: rotateX(90deg) rotateZ(270deg);
+    }
+
+    100% {
+        transform: rotateX(90deg) rotateZ(360deg);
+    }
+}
+
+#border1 {
+    width: 900px;
+    height: 900px;
+    position: relative;
+    border-top: 10px solid #2d2c32;
+    border-bottom: 1px solid white;
+    border-right: 10px solid white;
+    border-left: 1px solid white;
+    border-radius: 50%;
+    top: -1033px;
+    bottom: 0;
+    right: 0;
+    left: -305px;
+    animation: rotate1 1s linear infinite;
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotateX(90deg) rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateX(90deg) rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateX(90deg) rotateZ(180deg);
+    }
+
+    75% {
+        transform: rotateX(90deg) rotateZ(270deg);
+    }
+
+    100% {
+        transform: rotateX(90deg) rotateZ(360deg);
+    }
+}
+
+
+.box1 td {
+    width: 94px;
+    height: 93px;
+    border-radius: 10px;
+    background-color: #767e81;
+    border: 1px solid black;
+}
+
+.box2 td {
+    width: 94px;
+    height: 93px;
+    border-radius: 10px;
+    background-color: #0a4e67;
+    border: 1px solid black;
+}
+
+.box3 td {
+    width: 94px;
+    height: 93px;
+    border-radius: 10px;
+    background-color: #5a4681;
+    border: 1px solid black;
+}
+
+.box4 td {
+    width: 94px;
+    height: 93px;
+    border-radius: 10px;
+    background-color: #47a492;
+    border: 1px solid black;
+}
+
+.box5 td {
+    width: 94px;
+    height: 93px;
+    border-radius: 10px;
+    background-color: #c5c9d2;
+    border: 1px solid black;
+}
+
+.box6 td {
+    width: 94px;
+    height: 93px;
+    border-radius: 10px;
+    background-color: #2d2c32;
+    border: 1px solid black;
+}
